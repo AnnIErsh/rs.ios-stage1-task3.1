@@ -41,7 +41,7 @@
 }
 
 - (void)addLabelResultColor {
-    CGRect labelRect = CGRectMake(30, 150, 100, 40);
+    CGRect labelRect = CGRectMake(30, 100, 100, 40);
     self.labelResultColor = [[UILabel alloc] initWithFrame:labelRect];
     self.labelResultColor.text = @"Color";
     self.labelResultColor.accessibilityIdentifier = @"labelResultColor";
@@ -122,7 +122,7 @@
 
 - (void)addButtonProcess {
     float x = (self.view.frame.size.width - 100) / 2;
-    CGRect buttonRect = CGRectMake(x, self.textFieldBlue.frame.origin.y + self.textFieldBlue.frame.size.height + 50, 100, 40);
+    CGRect buttonRect = CGRectMake(x, self.textFieldBlue.frame.origin.y + self.textFieldBlue.frame.size.height + 10, 100, 44);
     self.buttonProcess = [[UIButton alloc] initWithFrame:buttonRect];
     [self.buttonProcess setTitle:@"Process" forState:UIControlStateNormal];
     [self.buttonProcess setTitleColor:UIColor.blueColor forState:UIControlStateNormal];
